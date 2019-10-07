@@ -3,5 +3,29 @@ body {
 }
 
 h1 {
-    color: hotpink
+    color: hotpink;
+    font-size: 25px;
+
+}
+
+h2 {
+
+color: green;
+font-size: 20;
+
+}
+.red-heading {
+    color: red;
+
+}
+
+.blue-text {
+    color:blue;
+
+}
+
+#new-font {
+    <element id=
+    font-family: fantasy, cursive, serif;
+
 }
