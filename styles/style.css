@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-    color: hotpink;
+    color: rgb(7, 11, 255);
     font-size: 25px;
 
 }
@@ -11,9 +11,16 @@ h1 {
 h2 {
 
 color: green;
-font-size: 20;
+font-size: 20px;
 
 }
+
+    header p {
+        font-weight: bold;
+        color: blue;
+        font-style: italic;
+}
+
 .red-heading {
     color: red;
 
