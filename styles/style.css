@@ -21,6 +21,16 @@ font-size: 20px;
         font-style: italic;
 }
 
+main {
+    background: coral;
+}
+
+footer {
+    background-color: aliceblue;
+    border: black solid thin;
+
+}
+
 .red-heading {
     color: red;
 
