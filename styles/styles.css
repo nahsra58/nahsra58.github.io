@@ -11,7 +11,7 @@ h1 {
 h2 {
 
 color: green;
-font-size: 20px;
+font-size: 40px;
 
 }
 
@@ -19,6 +19,9 @@ font-size: 20px;
         font-weight: bold;
         color: blue;
         font-style: italic;
+        text-align: left;
+        font-family: cursive, serif;
+        font-size: 30px;
 }
 
 main {
@@ -28,7 +31,7 @@ main {
 footer {
     background-color: aliceblue;
     border: black solid thin;
-
+    text-align: left;
 }
 
 .red-heading {
@@ -45,4 +48,26 @@ footer {
     <element id=
     font-family: fantasy, cursive, serif;
 
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+img {
+    max-width: 220px;
+    max-height: 150px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
 }
