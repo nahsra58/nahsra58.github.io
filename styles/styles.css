@@ -3,15 +3,28 @@ body {
 }
 
 h1 {
-    color: rgb(0, 255, 136);
-    font-size: 25px;
+    color: rgb(153, 0, 255);
+    font-size: 45px;
 
 }
 
 h2 {
 
 color: green;
-font-size: 40px;
+font-size: 30px;
+
+
+
+}
+    header {
+        background: rgb(217, 255, 0);
+
+
+
+
+
+}
+
 
 }
 
@@ -22,6 +35,7 @@ font-size: 40px;
         text-align: left;
         font-family: cursive, serif;
         font-size: 30px;
+        
 }
 
 main {
@@ -70,4 +84,22 @@ figcaption {
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
+}
+nav {        
+    background-color: aliceblue;
+    border: 1px green solid;
+    padding: 8px;
+    margin: -1px 0px 0px 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav li {
+    display: inline;
+    padding: 8px;    
 }
