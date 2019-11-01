@@ -12,7 +12,7 @@ h1 {
 
 h2 {
 
-color: green;
+color: black;
 font-size: 30px;
 
 
@@ -80,6 +80,7 @@ figure > img {
 img {
     max-width: 500px;
     max-height: 5000px;
+    padding-right: 10px;
 }
 
 figcaption {
