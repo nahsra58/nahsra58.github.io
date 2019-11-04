@@ -12,7 +12,7 @@ h1 {
 
 h2 {
 
-color: green;
+color: rgb(8, 67, 177);
 font-size: 30px;
 
 
@@ -61,7 +61,7 @@ footer {
 }
 
 #new-font {
-    
+    <element id=
     font-family: fantasy, cursive, serif;
 
 }
@@ -153,25 +153,4 @@ aside {
 
 section {
     display: block;
-}
-.column {
-    float: left;
-    width:50%;
-    
-
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  #wrap {
-      width:485px;
-      
-  }
-  .left {width: 50px;
-    float:left;
-}
-    .right{width: 50px;
-    float:right;
 }

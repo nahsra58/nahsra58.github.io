@@ -12,7 +12,7 @@ h1 {
 
 h2 {
 
-color: green;
+color: black;
 font-size: 30px;
 
 
@@ -61,7 +61,7 @@ footer {
 }
 
 #new-font {
-    
+    <element id=
     font-family: fantasy, cursive, serif;
 
 }
@@ -78,8 +78,9 @@ figure > img {
 }
 
 img {
-    max-width: 500px;
+    max-width: 482px;
     max-height: 5000px;
+    padding-right: 10px;
 }
 
 figcaption {
@@ -153,25 +154,4 @@ aside {
 
 section {
     display: block;
-}
-.column {
-    float: left;
-    width:50%;
-    
-
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  #wrap {
-      width:485px;
-      
-  }
-  .left {width: 50px;
-    float:left;
-}
-    .right{width: 50px;
-    float:right;
 }
