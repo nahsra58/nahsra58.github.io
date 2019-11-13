@@ -3,7 +3,8 @@ const height = 5;
         console.log('We have a big one');
     } else {
         console.log('We have a little one');
-    } else {
+    } 
+    else {
         console.log('We have a negative number or invalid number')
     }
 
