@@ -55,9 +55,9 @@ const myObject = {
     three: 3, 
 };            
 
-myObject.newItem = 'This is a new item in my object:',
-console.log(myObject, smallNumbers);
-console.log('values in our object:', smallNumbers.one, smallNumbers.two, smallNumbers.three);
+myObject.newItem = 'This is a new item in my object.'
+console.log(myObject.five);
+console.log(myObject.six);
 console.log(myObject.newItem);
 
 divider();
