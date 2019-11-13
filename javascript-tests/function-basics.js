@@ -1,26 +1,29 @@
-window.onload = () => {
-    const simpleFunction = document.getElementById('simpleFunction');
-    const functionParameters = document.getElementById('functionParameters');
-    const functionReturn = document.getElementById('functionReturn');
+//window.onload = () => {
     
-    function simple() {
-        console.log('simpleFuction');
-        simpleFunction.textContent = "simpleFunction";
+    //const simpleFunction = document.getElementById('simpleFunction');
+    //const functionParameters = document.getElementById('functionParameters');
+    //const functionReturn = document.getElementById('functionReturn');
+    
+    function simpleFunction() {
+        console.log('Functions should consist of statements designed to perform a single task.');
+        
         
     }
-    functionCallsAction.onclick = simple;
 
-    const data = nameDisplay.value; 
-
-    const elfCode = {
-        appendToList: (list, value) => {
-            const li = document.createElement("li");
-            li.appendChild(document.createTextNode(value));
-            list.appendChild(li);
-        }
+    function functionParameters(value) {
+        console.log(value);
     }
-    const someAction = document.getElementById('someAction');
-someAction.onclick = function() {
-    // Handle the onclick event in here.
-}
-}
+
+    function functionReturn() {
+        return "Many functions return values.";
+    }
+
+    simpleFunction();
+
+    functionParameters("Many functions take paramerters.");
+
+    const returnValue = functionReturn();
+    console.log(returnValue)
+
+
+//}
