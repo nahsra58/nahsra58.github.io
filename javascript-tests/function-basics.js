@@ -18,11 +18,23 @@ window.onload = () => {
         return "Many functions return values.";
     }
 
-    //simpleFunction();
+    simpleFunction();
 
     functionParameters("Many functions take paramerters.");
 
     const returnValue = functionReturn();
     console.log(returnValue)
+
+    const elfCode = {
+        appendToList: (list, value) => {
+            const li = document.createElement("li");
+            li.appendChild(document.createTextNode(value));
+            list.appendChild(li);
+        }
+    }
+    const functionCallsAction = document.getElementById('functionCallsAction');
+    functionCallsAction.onclick = function(elfcode) {
+    // Handle the onclick event in here.
+    }
 }
 
