@@ -1,63 +1,76 @@
-window.onload = () => {
-    const feetToInchesAction = 
-        document.getElementById('feetToInchesAction');
+window.onload= ()=> {
 
-    feetToInchesAction.onclick = () => {
-        const feetToInchesInput = document.getElementById('feetToInchesInput');
-        const feetToInchesDisplay = document.getElementById('feetToInchesDisplay');
+    const feetToInchesAction = document.getElementById('feetToInchesAction');
 
-        feetToInchesDisplay.textContent = feetToInches(feetToInchesInput.value);
-    };
+    const milesToFeetAction=document.getElementById('milesToFeetAction');
+
+    const areaOfTriangleAction=document.getElementById('areaOfTriangleAction');
+
+    const areaOfCircleAction=document.getElementById('areaOfCircleAction')
+
+
+
+feetToInchesAction.onclick = () => {
+    const feetToInchesInput = document.getElementById('feetToInchesInput');
+
+    const feetToInchesDisplay = document.getElementById('feetToInchesDisplay');
+
+    feetToInchesDisplay.textContent = feetToInches(feetToInchesInput.value);
 };
 
-const feetToInches = (feet) => {
-    return feet * 12;
-};
 
-window.onload = () => {
-    const milesToFeetAction = 
-        document.getElementById('milesToFeetAction');
 
-    milesToFeetAction.onclick = () => {
-        const milesToFeetInput = document.getElementById('milesToFeetInput');
-        const milesToFeetDisplay = document.getElementById('milesToFeetDisplay');
+milesToFeetAction.onclick = () => {
+    const milesToFeetInput=document.getElementById('milesToFeetInput');
 
-        milesToFeetDisplay.textContent = milesToFeet(milesToFeetInput.value);
-    };
-};
+    const milesToFeetIDisplay=document.getElementById('milesToFeetDisplay');
 
-const milesToFeet = (miles) => {
-    return miles * 5280;
-};
+    milesToFeetIDisplay.textContent=milesToFeet(milesToFeetInput.value)
+}
 
-window.onload = () => {
-    const areaOfTriangle = 
-        document.getElementById('areaOfTriangleAction');
 
-    areaOfTriangleAction.onclick = () => {
-        const areaOfTriangleInput = document.getElementById('areaOfTriangleInput');
-        const areaOfTriangleDisplay = document.getElementById('areaOfTriangleDisplay');
 
-        areaOfTriangleDisplay.textContent = areaOfTriangle(areaOfTriangleInput.value);
-    };
-};
+areaOfTriangleAction.onclick =() => {
+    const areaOfTriangleInputBase=document.getElementById('areaOfTriangleInputBase');
 
-const areaOfTriangle = (base, height) => {
-    return base, height * 12;
-};
+    const areaOfTriangleInputHeight=document.getElementById('areaOfTriangleInputHeight');
 
-window.onload = () => {
-    const areaOfCircleAction = 
-        document.getElementById('areaOfCircleAction');
+    const areaOfTriangleDisplay=document.getElementById("areaOfTriangleDisplay");
 
-    areaOfCircleAction.onclick = () => {
-        const areaOfCircleInput = document.getElementById('areaOfCircleInput');
-        const areaOfCircleDisplay = document.getElementById('areaOfCircleDisplay');
+    areaOfTriangleDisplay.textContent=areaOfTriangle(areaOfTriangleInputBase.value, areaOfTriangleInputHeight.value);
+}
 
-        areaOfCircleDisplay.textContent = areaOfCircle(areaOfCircleInput.value);
-    };
-};
 
-const areaOfCircle = (radius) => {
-    return radius * 12;
-};
+
+areaOfCircleAction.onclick= () => {
+    const areaOfCircleInput=document.getElementById('areaOfCircleInput');
+
+    const areaOfCircleDisplay=document.getElementById('areaOfCircleDisplay');
+    
+    areaOfCircleDisplay.textContent=areaOfCircle(areaOfCircleInput.value);
+}
+
+
+    const feetToInches = (feet) => {
+        return feet *12;
+    }
+
+
+
+    const milesToFeet = (miles) => {
+        return miles*5280;
+    }
+
+
+
+    const areaOfTriangle =(base, height) => {
+        return (base * height/2);
+    }
+
+
+
+    const areaOfCircle =(radius) => {
+        return Math.PI * Math.pow(radius,2);
+    }
+
+}
