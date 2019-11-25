@@ -1,12 +1,3 @@
-const simpleObject = {
-    sayName: function() {
-        console.log("simple object");
-    };
-
-    simpleObject.dynamicMethod = () => {
-        console.log("Dynamic Method");
-    }
+window.onload = () => {
+    const simpleObjectDisplay = document.getElementById('simpleObjectDisplay')
 }
-
-simpleObject.sayName();
-simpleObject.dynamicMethod();
