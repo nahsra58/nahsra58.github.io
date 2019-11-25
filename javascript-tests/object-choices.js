@@ -1,41 +1,64 @@
 window.onload = () => {
 
-
     const simpleObject = {
-
-        firstName: "James",
-        lastName: "Watson",
+        firstName: 'James',
+        middleName: 'Foo',
+        lastName: 'Watson',
+    
+    const simpleObjectDisplay = document.getElementById('simpleObjectDisplay');
+    const simpleObjectAction = document.getElementById('simpleOjectAction');
+    
+    
 
         sayName: function () {
+            const fullName = "Get Full Name:   " + this.firstName + " " + this.middleName+ " " + this.lastName;
 
-            const fullName= this.firstName + this.lastName;
-
-            console.log(fullName);
-        }
+         
+            simpleObjectDisplay.textContent = fullName;
+            }
     };
 
-    const simpleObjectDisplay = document.getElementById('simpleObjectDisplay')
-    const functionObjectDisplay = document.getElementById('simpleObjectDisplay')
-    const customClassDisplay = document.getElementById('customClassDisplay')
-
-    simpleObjectAction.onclick = function() {
+    simpleObjectAction.onclick = function(){
         simpleObject.sayName();
-        simpleObjectDisplay.textContent=fullName;
     }
 
     simpleObject.dynamicMethod = () => {
 
-        return("Dynamic Method");
-
-    }
+        console.log('Dynamic Method');
+    };
 
     function FunctionObject() {
-
         FunctionObject.prototype.sayName = function () {
+    
 
-            return("Function Object");
+             functionObjectDisplay.textContent = "Constructor Function Full Name : Rosalind Franklin";
         }
+    };
+    functionObjectAction.onclick = function(){
+        functionObject.sayName();
     }
 
-    
-}
+    class CustomClass {
+        sayName() {
+
+            console.log('Custom Class');
+
+            customClassDisplay.textContent = "Custom Class Full Name: Francis Crick";
+        }
+    };
+
+    customClassAction.onclick = function(){
+        customClass.sayName();
+
+    }
+
+    const functionObject = new FunctionObject();
+    const customClass = new CustomClass();
+
+    simpleObject.dynamicMethod();
+
+
+
+
+
+};
