@@ -175,3 +175,19 @@ section {
     .right{width: 50px;
     float:right;
 }
+.blueBackground {
+    background-color: aqua;
+}
+
+.greenBackground {
+    background-color: green;
+}       
+.redBackground {
+    background-color: red;
+}  
+.yellowBackground {
+    background-color: yellow;
+}  
+.purpleBackground {
+    background-color: purple;
+}   
