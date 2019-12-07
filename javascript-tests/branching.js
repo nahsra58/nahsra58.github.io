@@ -50,7 +50,7 @@ switch(height) {
 
 }
 
-//window.onload = () => {
+window.onload = () => {
     const simpleBranchAction = document.getElementById('simpleBranchAction');
 
     const simpleBranchDisplay = document.getElementById('simpleBranchDisplay');
@@ -70,4 +70,4 @@ switch(height) {
 
         }   
     }
-//}          
+}          
