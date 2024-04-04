@@ -15,10 +15,16 @@ body {
 
 /* Style headers */
 
-h1, h3 {
+
+h1 {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
     padding-bottom: 0px;
     margin-bottom: 0px;
-
+}
 
 
 h2{
