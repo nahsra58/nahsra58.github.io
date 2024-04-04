@@ -18,7 +18,7 @@ h1, h2, h3 {
     padding-top: 20px;
     padding-bottom: 40px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #eaeaea;
+    /*border-bottom: 1px solid #eaeaea;*/
 }
 
 /* Style links */
@@ -32,3 +32,57 @@ a:hover {
 }
 
 /* Add more styles based on your design */
+.container {
+    width: 80%;
+    margin: auto; /* Centers the container */
+    overflow: hidden; /* Fixes floating elements */
+}
+
+/* Flexbox example for a simple two-column layout */
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1; /* Each column takes equal space */
+    margin: 10px; /* Spacing between columns */
+}
+
+
+/* For tablets */
+@media (max-width: 768px) {
+    .column {
+        flex: 100%; /* Each column takes full width */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+
+/* Typography */
+p {
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Further customize your site with specific styles for your navigation, footer, etc. */
