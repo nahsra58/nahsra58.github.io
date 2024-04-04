@@ -1,0 +1,33 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set some basic styles */
+body {
+    font-family: 'Arial', sans-serif; /* Use a web-safe font */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* A darker shade for better readability */
+    padding: 20px; /* Avoids content touching the edges */
+    background-color: #f4f4f4; /* A light background color */
+}
+
+/* Style headers */
+h1, h2, h3 {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Style links */
+a {
+    color: #333;
+    text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Add more styles based on your design */
