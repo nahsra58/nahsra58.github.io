@@ -37,19 +37,7 @@
 
 
 
-<section id="blockP">
-<h2>Python</h2>
-<h3>Motion Detection Software</h3>
-<p>Using python, I developed a program to detect and show the motion across several images 
-    or frames of a video. As we feed each image, our program computes which pixels of the image have one of the 3 color 
-    channels that are outside the  𝜇±𝜅𝜎  interval, where  𝜇  is the average,  
-    𝜎  is the standard deviation, and  𝜅  is a parameter; we will use  𝜅=4  in our experiments, 
-    thus detecting motion if values deviate from the average by more than 4 standard deviations. 
-    The result is a  ℎ×𝑤×𝑐  boolean matrix filled with True/False values. If the motion detection
-    contains more than 500 motion pixels, it puts the detection, and the index of the image, into a list of results.
-</p>
-</figure>
-</section>
+
 
 
 <section id="blockC">
@@ -83,6 +71,19 @@ alt="Info">
 </p>
 </figure>
 </section>
+<section id="blockP">
+    <h2>Python</h2>
+    <h3>Motion Detection Software</h3>
+    <p>Using python, I developed a program to detect and show the motion across several images 
+        or frames of a video. As we feed each image, our program computes which pixels of the image have one of the 3 color 
+        channels that are outside the  𝜇±𝜅𝜎  interval, where  𝜇  is the average,  
+        𝜎  is the standard deviation, and  𝜅  is a parameter; we will use  𝜅=4  in our experiments, 
+        thus detecting motion if values deviate from the average by more than 4 standard deviations. 
+        The result is a  ℎ×𝑤×𝑐  boolean matrix filled with True/False values. If the motion detection
+        contains more than 500 motion pixels, it puts the detection, and the index of the image, into a list of results.
+    </p>
+    </figure>
+    </section>
 </main>
 <footer>
 <p>Copyright © 2019 By: Arshan Rashidi</p>
