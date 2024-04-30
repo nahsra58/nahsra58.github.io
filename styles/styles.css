@@ -56,7 +56,7 @@ header {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers the content vertically */
+    justify-content: flex-start; /* Centers the content vertically */
 }
 
 .sidebar h3 {
@@ -91,18 +91,18 @@ header {
     color: #ffffff; /* Keep text color white for better contrast */
 }
 
-/* Optional: Adding a small icon next to each link can enhance visibility */
+/* Optional: Adding a small icon next to each link can enhance visibility
 .sidebar ul li a::before {
     content: "";
-    display: inline-block;
-    width: 20px; /* Adjust width accordingly */
-    height: 20px; /* Adjust height accordingly */
-    /* background-image: url('icon-path.png'); Replace with actual path to your icon */
+    display: inline-block; */
+    /* width: 20px; Adjust width accordingly */
+    /* height: 20px; Adjust height accordingly */
+    /* background-image: url('icon-path.png'); Replace with actual path to your icon
     background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 10px; /* Space between icon and text */
-    vertical-align: middle; /* Align icon with text */
-}
+    background-repeat: no-repeat; */
+    /* margin-right: 10px; Space between icon and text */
+    /* vertical-align: middle; Align icon with text */
+/* } */
 
 
 /* Main content area */
