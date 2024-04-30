@@ -1,95 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content=
-"width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Document</title>
-<link href="styles/styles.css" rel="stylesheet">
-<link rel="icon" type="image/png" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arshan Rashidi's Portfolio</title>
+    <link href="styles/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-    <!-- <div class="sidebar"> -->
-        <!-- Sidebar content goes here -->
-        <!-- <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li> -->
-            <!-- Add more links as needed -->
-        <!-- </ul>
-    </div> -->
-<div class="main-content">
-<header>
-<h1>Arshan Rashidi</h1>
-<h2>Welcome to my portfolio</h2>
-
-
-</header>
-<nav>
-    <h3>Projects</h3>
-    <h3>(More coming soon)</h3>
-
-    <li><a href="#blockC">C</a></li>
-    <li><a href="#blockC++">C++</a></li>
-    <li><a href="#blockVerilog">Verilog</a></li>
-    <li><a href="#blockP">Python</a></li>
-</nav>
-<main>
-<section id="block01"></section>
-
-
-
-
-
-
-
-<section id="blockC">
-<h2>C</h2>
-<h3>Surfin U.S.A. (route mapper)</h3>
-<p>In this project, graph and stack data structures were meticulously implemented and debugged with the primary goal of determining the optimal route between vertices. To explore all possible routes, a Depth-First-Search (DFS) algorithm was employed, adopting a brute-force recursive approach. This methodology allowed for the thorough investigation of potential paths, ensuring the identification of the most efficient route. Additionally, to augment the program's overall efficiency and reliability, various error-checking tools, such as Valgrind and lldb, were incorporated. These tools played a crucial role in identifying memory leaks and other issues, significantly contributing to the optimization of the program. Emphasizing code quality, efforts were made to enhance readability, maintenance, and scalability. This was achieved through comprehensive documentation and the development of modular code, fostering an environment for potential future expansion and adaptations. Moreover, a Makefile was employed, streamlining the processes of compilation, code formatting, and cleanup operations, thereby contributing to the overall efficiency and smooth progression of the project.</p>
-</figure>
-</section>
-<section id="blockC++">
-<h2>C++</h2>
-<h3>BigInteger</h3>
-
-<p>In this project, a BigInteger Abstract Data Type (ADT) was meticulously implemented and refined with the primary goal of performing arithmetic operations on very large integers beyond the capacity of standard C++ data types. To handle these large numbers, a custom list of long integers was employed, with each element representing a digit in a large base system. This setup facilitated the manipulation of numbers as sequences of base \(10^p\) digits, where \(p\) ranges from 1 to 9.
-    The development process involved extensive use of C++ programming techniques to ensure the accurate representation and arithmetic processing of big integers. To achieve this, operations such as addition, subtraction, and multiplication were broken down into manageable steps dealing with individual digits, allowing for the effective handling of carries and borrows across the list.
-    For debugging and optimization, tools like Valgrind and GDB were integral in identifying and fixing memory leaks and enhancing the program's reliability. Emphasis was placed on producing clean, maintainable, and scalable code. This was supported by comprehensive documentation and the implementation of a modular structure, which laid the groundwork for future enhancements or modifications.
-    Further, the use of a Makefile was crucial in automating compilation and testing processes, which streamlined the development cycle and improved project efficiency. Through these methods, the BigInteger ADT project not only met its computational goals but also adhered to high standards of code quality and maintainability.
-</p>
-</figure>
-</section>
-<section id="blockVerilog">
-<h2>Verilog</h2>
-<h3>Osmosis game</h3>
-
-<p>In this project, I developed a game titled 'Osmosis' using Verilog, showcasing advanced proficiency in logic circuit design and digital systems. This endeavor provided a platform to deeply engage with FPGA programming on the BASYS3 board, which significantly enhanced my hardware interfacing capabilities.
-    The core of the project involved designing a synchronous digital system that strictly adhered to timing constraints. This system utilized edge-triggered flip-flops to ensure reliable operation across various game functionalities, including molecule movement, collision detection, and dynamic membrane color control, enriching the interactive gaming experience.
-    To align with industry standards, I gained hands-on experience with VGA protocols, mastering the intricacies of control signals such as Hsync and Vsync, alongside RGB data signal generation. This knowledge was pivotal in rendering the graphical interface of the game, contributing to a seamless and visually engaging user experience.
-    My role also extended to debugging and refining the game’s digital systems, where I exhibited strong problem-solving skills to overcome challenges inherent in complex system integration. Collaboration was key, and I actively participated in team discussions, contributing to the collective design and implementation strategies.
-    Furthermore, to ensure the reliability and functionality of each component, I created and utilized Verilog testbenches. These were instrumental in the simulation and rigorous testing phases of the project, allowing for detailed verification of all design aspects. Through this project, I not only advanced my technical skills but also reinforced my ability to work effectively within a team, driving the project towards a successful completion.
-</p>
-</figure>
-</section>
-<section id="blockP">
-    <h2>Python</h2>
-    <h3>Motion Detection Software</h3>
-    <p>Using python, I developed a program to detect and show the motion across several images 
-        or frames of a video. As we feed each image, our program computes which pixels of the image have one of the 3 color 
-        channels that are outside the  𝜇±𝜅𝜎  interval, where  𝜇  is the average,  
-        𝜎  is the standard deviation, and  𝜅  is a parameter; we will use  𝜅=4  in our experiments, 
-        thus detecting motion if values deviate from the average by more than 4 standard deviations. 
-        The result is a  ℎ×𝑤×𝑐  boolean matrix filled with True/False values. If the motion detection
-        contains more than 500 motion pixels, it puts the detection, and the index of the image, into a list of results.
-    </p>
-    </figure>
-    </section>
-</main>
-<footer>
-<p>Copyright © 2019 By: Arshan Rashidi</p>
-</footer>
-</div>
+    <div class="container main-content">
+        <header>
+            <h1>Arshan Rashidi</h1>
+            <h2>Welcome to my portfolio</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#blockC">C Projects</a></li>
+                <li><a href="#blockC++">C++ Projects</a></li>
+                <li><a href="#blockVerilog">Verilog Projects</a></li>
+                <li><a href="#blockP">Python Projects</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="blockC">
+                <h2>C Projects</h2>
+                <h3>Surfin U.S.A. (route mapper)</h3>
+                <p>...</p>
+            </section>
+            <section id="blockC++">
+                <h2>C++ Projects</h2>
+                <h3>BigInteger</h3>
+                <p>...</p>
+            </section>
+            <section id="blockVerilog">
+                <h2>Verilog Projects</h2>
+                <h3>Osmosis game</h3>
+                <p>...</p>
+            </section>
+            <section id="blockP">
+                <h2>Python Projects</h2>
+                <h3>Motion Detection Software</h3>
+                <p>...</p>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright © 2023 By: Arshan Rashidi</p>
+        </footer>
+    </div>
 </body>
 </html>
