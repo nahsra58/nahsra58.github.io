@@ -48,22 +48,60 @@ header {
     border-bottom: 2px solid #007bff;
 }
 
-/* Navigation styles */
-nav ul {
+/* Enhance sidebar navigation aesthetics */
+.sidebar {
+    background-color: #0255a3; /* Darker shade of blue for more professional look */
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-nav ul li {
-    margin: 10px 0;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
+    justify-content: center; /* Centers the content vertically */
 }
 
-nav ul li a.active {
-    background-color: #0056b3;
-    color: #fff;
+.sidebar h3 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-align: center; /* Center the section heading */
+    color: #e0e0e0; /* Lighter gray for a subtle contrast */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0; /* Add more vertical space between items */
+}
+
+.sidebar ul li a {
+    display: block; /* Makes the link fill the entire list item */
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px; /* Add padding for better touch */
+    font-size: 1.05em; /* Slightly larger text for better readability */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active {
+    background-color: #0370d9; /* Lighter blue for hover/active state */
+    color: #ffffff; /* Keep text color white for better contrast */
+}
+
+/* Optional: Adding a small icon next to each link can enhance visibility */
+.sidebar ul li a::before {
+    content: "";
+    display: inline-block;
+    width: 20px; /* Adjust width accordingly */
+    height: 20px; /* Adjust height accordingly */
+    /* background-image: url('icon-path.png'); Replace with actual path to your icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon with text */
 }
 
 
