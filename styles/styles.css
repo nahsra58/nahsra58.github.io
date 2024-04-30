@@ -24,7 +24,7 @@ ul {
 }
 
 .sidebar {
-    background-color: #007bff;
+    background-color: #7c838b;
     color: white;
     padding: 20px;
     min-height: 100vh;
@@ -36,7 +36,7 @@ ul {
 
 .main-content {
     flex: 1;
-    background: #fff;
+    background: #c6bfbf;
     padding: 20px;
     border-left: 2px solid #007bff;
 }
