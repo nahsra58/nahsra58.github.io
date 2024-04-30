@@ -61,6 +61,12 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a.active {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+
 /* Main content area */
 main {
     margin-top: 20px;
